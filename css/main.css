@@ -7,16 +7,24 @@ body {
   padding: 0;
 }
 body {
-  background: #9cd4d6 url(../img/bg-img.png) no-repeat;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.bg-home {
   background-blend-mode: multiply;
   background-position: center top;
   background-size: auto;
+  background: #9cd4d6 url(../img/bg-img.png) no-repeat;
 }
 nav {
   width: 100%;
-  margin-top: 60px;
-  background-color: rgba(255,255,255,.85);
-  /* background-color: #fff; */
+  /* margin-top: 60px; */
+  /* background-color: rgba(255,255,255,.85); */
+  background-color: #fff;
+  padding: 0;
+}
+nav #menu {
+  display: block;
 }
 nav ul {
   list-style: none;
@@ -27,25 +35,51 @@ nav ul li {
   margin: 0;
 }
 nav ul li {
-  font: bold 13px/60px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: bold 13px/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-nav ul li a {
+/* nav ul li a {
   height: 60px;
   display: block;
   color: #333;
   text-decoration: none;
   padding: 0 10px;
-}
+} */
 nav ul li a:hover {
-  background-color: #fff;
+  /* background-color: #fff; */
+  border-bottom: 1px solid #333;
+}
+nav h1 {
+  /* width: 140px; */
+  width: 100%;
+  font: bold 13px/60px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  background: url(../img/logo-sixiiistudio.svg;) 10px 15px no-repeat;
+  /* background-size: 134px 26px; */
+  /* background-size: 150px 30px; */
+  background-size: 144px 28px;
+}
+nav ul li a,
+nav h1 a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+nav ul li a {
+  padding: 30px 0 10px 0;
+  margin-right: 10px;
+  border-bottom: 1px solid #fff;
 }
 .hero {
-  padding: 60px 10px;
-  margin-top: 90px;
+  padding: 30px 10px 60px 10px;
+  /* margin-top: 90px; */
 }
-.hero h1 {
-  font: bold 30px/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  max-width: 600px;
+.hero h2 {
+  font: 400 30px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  max-width: 480px;
+}
+.content p {
+  font: 18px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  max-width: 640px;
 }
 /** Structure ********************/
 
@@ -59,8 +93,9 @@ nav ul li a:hover {
   max-width: 960px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding-left: 20px;
-  padding-right: 20px;
+}
+.content {
+  padding: 0 10px;
 }
 
 /** Palette *********************/
@@ -70,14 +105,24 @@ nav ul li a:hover {
 .bg-yellow {
   background-color: #ffff88;
 }
+.bg-orange {
+  background-color: #ff4f28;
+}
 
 @media screen and (min-width: 960px) {
-  body {
+  .bg-home {
     /* background-position: center center; */
     background-size: cover;
   }
+  nav #menu {
+    display: flex;
+  }
+  nav h1 {
+    width: 160px;
+    margin-right: 140px;
+  }
   nav ul li {
     display: inline-block;
-    width: 140px;
+    width: 150px;
   }
 }
