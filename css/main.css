@@ -7,9 +7,9 @@ body {
   padding: 0;
 }
 body {
-  background: #F16529 url(../img/bg-img.png) no-repeat;
-  /* background-blend-mode: multiply; */
-  background-position: center top;
+  background: #F16529 url(../img/IMG_0644.jpg) no-repeat;
+  background-blend-mode: multiply;
+  background-position: center 600px;
   background-size: auto;
 }
 nav {
