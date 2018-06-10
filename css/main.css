@@ -62,7 +62,8 @@ nav ul li a:hover {
 }
 .hero .container .sidebar h3,
 .bio .container h2,
-.gear .container h2 {
+.gear .container h2,
+.music .container h2 {
   height: 60px;
   padding-left: 10px;
   border-left: 1px solid #fff;
@@ -83,7 +84,8 @@ nav ul li a:hover {
 .hero .container .sidebar p,
 .bio .container aside p,
 .bio .container article p,
-.gear .container .col article p
+.col article p,
+.music .container p
  {
   font: 400 13px/1.75 "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
@@ -95,7 +97,7 @@ nav ul li a:hover {
   padding: 60px 0 180px 0;
 }
 .bio .container h2 {
-  border-left-color: #f72;
+  /* border-left-color: #f72; */
 }
 .bio .container aside,
 .bio .container article {
@@ -120,19 +122,48 @@ nav ul li a:hover {
 .gear .container {
   padding: 60px 10px 180px 10px;
 }
-.gear .container h2 {
+.gear .container h2,
+.music .container h2 {
   color: #333;
   height: 120px;
 }
-.gear .container .col article {
+.col article {
   max-width: 320px;
   padding-right: 40px;
 }
-.gear .container .col article p {
+.col article p {
   line-height: 1.5;
   padding: 0;
   margin: 0;
 }
+.music .container {
+  padding: 90px 10px 180px 10px;
+}
+.music .container h2 {
+  border-color: #ccc;
+}
+.music .container p {
+  max-width: 420px;
+  padding-right: 40px;
+  margin-bottom: 60px;
+}
+/** Player ***********************/
+
+.player {
+  overflow: hidden;
+  width: 300px;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+.player iframe {
+  /* visibility: hidden; */
+  margin-left: -120px;
+  margin-top: -3px;
+}
+.player #widget {
+  border: none;
+}
+
 /** Structure ********************/
 
 .container-fluid {
@@ -149,12 +180,13 @@ nav ul li a:hover {
   padding-right: 10px;
 }
 
-/** Palette *********************/
+/** Backgrounds ******************/
+
 .bg-white {
   background-color: #fff;
 }
 .bg-yellow {
-  background-color: #ff8;
+  background-color: #d4c9aa;
 }
 .bg-orange {
   background-color: #E44D26;
@@ -167,6 +199,9 @@ nav ul li a:hover {
 }
 .bg-aqua-light {
   background-color: #acc;
+}
+.bg-grey-light {
+  background-color: #f5f5f5;
 }
 
 @media screen and (min-width: 960px) {
@@ -187,8 +222,8 @@ nav ul li a:hover {
   .bio .container aside {
     /* margin-left: 320px; */
   }
-  .bio .container ,
-  .gear .container .col {
+  .bio .container,
+  .col {
     display: flex;
   }
 
