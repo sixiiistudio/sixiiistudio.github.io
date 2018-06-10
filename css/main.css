@@ -7,7 +7,7 @@ body {
   padding: 0;
 }
 body {
-  background: #F16529 url(../img/IMG_0644.jpg) no-repeat;
+  background: #E44D26 url(../img/IMG_0644.jpg) no-repeat;
   background-blend-mode: multiply;
   background-position: center 600px;
   background-size: auto;
@@ -47,16 +47,19 @@ nav ul li a:hover {
   display: block;
 }
 .hero .container h2 {
-  font: 600 45px/1.25 "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: -.01em;
+  font: 500 42px/1.25 "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* letter-spacing: -.012em; */
   color: #fff;
   max-width: 540px;
   margin: 100px 80px 120px 0;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 .hero .container .sidebar {
   max-width: 300px;
 }
-.hero .container .sidebar h3 {
+h3 {
   height: 60px;
   padding-left: 10px;
   border-left: 1px solid #fff;
@@ -66,9 +69,12 @@ nav ul li a:hover {
   text-transform: uppercase;
   color: #fff;
 }
+
 .hero .container .sidebar p {
-  font: 400 12px/1.75 "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
+  font: 400 13px/1.75 "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 /* .hero h1 {
   font: bold 30px/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
