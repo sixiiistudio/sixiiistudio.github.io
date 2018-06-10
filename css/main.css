@@ -125,8 +125,8 @@ nav ul li a:hover {
   height: 120px;
 }
 .gear .container .col article {
-  max-width: 300px;
-  padding-right: 20px;
+  max-width: 320px;
+  padding-right: 40px;
 }
 .gear .container .col article p {
   line-height: 1.5;
