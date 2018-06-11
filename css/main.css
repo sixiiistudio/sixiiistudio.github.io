@@ -22,6 +22,16 @@ nav {
   /* background-color: rgba(255,255,255,.85); */
   /* background-color: #fff; */
 }
+nav .container h1 {
+  padding-right: 18px;
+  border-right: 1px solid #fff;
+  margin-right: 12px;
+}
+nav .container h1,
+nav .container .subtext
+ {
+  display: inline-block;
+}
 nav ul {
   list-style: none;
 }
@@ -44,7 +54,7 @@ nav ul li a:hover {
   background-color: #fff;
 }
 .subtext {
-  font: 400 12px/1.75 "Overpass Mono", "Trebuchet MS", monospace;
+  font: 400 11px/1.5 "Overpass Mono", "Trebuchet MS", monospace;
   /* font: 400 11px/1.5 "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
 }
 .hero {
