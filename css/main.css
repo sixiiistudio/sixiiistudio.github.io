@@ -15,6 +15,7 @@ body {
 }
 #menu {
   position: fixed;
+  z-index: 999;
 }
 nav {
   width: 100%;
