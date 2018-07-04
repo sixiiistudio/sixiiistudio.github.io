@@ -10,48 +10,37 @@ body {
   background: #E44D26 url(../img/bg-bio.png) no-repeat;
   background-blend-mode: multiply;
   background-position: center center;
-  /* background-size: auto; */
   background-size: cover;
 }
 #menu {
   position: fixed;
+  z-index: 999;
 }
 nav {
   width: 100%;
   margin-top: 30px;
-  /* background-color: rgba(255,255,255,.85); */
-  /* background-color: #fff; */
 }
 nav .container h1 {
   padding-right: 18px;
-  /* border-right: 1px solid #fff; */
   margin-right: 12px;
 }
-nav .container h1,
-nav .container .subtext
- {
-  /* display: inline-block; */
-}
+
 nav ul {
   list-style: none;
 }
-nav ul,
-nav ul li {
-  padding: 0;
-  margin: 0;
-}
-nav ul li {
-  font: bold 13px/60px "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-nav ul li a {
-  height: 60px;
-  display: block;
-  color: #333;
+.button {
+  font: 500 30px/50px "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+  display: inline-block;
+  border: 2px solid #fff;
+  border-radius: 25px;
   text-decoration: none;
-  padding: 0 10px;
 }
-nav ul li a:hover {
-  background-color: #fff;
+.button:hover {
+  background-color: #d34a27;
 }
 .subtext {
   font: 400 11px/1.5 "Overpass Mono", "Trebuchet MS", monospace;
@@ -133,9 +122,9 @@ nav ul li a:hover {
   margin-top: 30px;
 }
 .bio .container a {
-  color: #f72;
+  color: #ffbb00;
   text-decoration: none;
-  border-bottom: 1px solid #f72;
+  border-bottom: 1px solid #ffbb00;
 }
 .gear .container {
   padding: 60px 10px 180px 10px;
@@ -165,13 +154,11 @@ nav ul li a:hover {
   padding-right: 40px;
   margin-bottom: 60px;
 }
-.map {
-  width: 100%;
-  height: 300px;
-  background: #ffffbb url(../img/map.png) center center no-repeat;
-  background-size: cover;
-  background-blend-mode: multiply;
-}
+/* .music .col article {
+  max-width: calc(25%);
+  padding: 0;
+  margin: 0;
+} */
 /** Player ***********************/
 
 .player {
@@ -233,10 +220,6 @@ nav ul li a:hover {
   body {
     /* background-position: center center; */
     background-size: cover;
-  }
-  nav ul li {
-    display: inline-block;
-    width: 140px;
   }
   .hero .container {
     display: flex;
